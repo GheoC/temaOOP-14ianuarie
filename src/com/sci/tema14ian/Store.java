@@ -1,4 +1,4 @@
-/*TemaOOP-14ianuarie: Local Store Simulation
+/*TemaOOP-14ianuarie: Local Store Simulation.
 Manages a store that has animal products and vegetables.
 The basic functions are: adding new stock to a product, selling products from the store, displays sales on a specific
 day specified by the user.

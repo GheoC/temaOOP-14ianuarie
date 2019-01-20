@@ -1,4 +1,4 @@
-/*
+/*14ianuarie-OOP
 Product is the superclass which has the following variables: id, price, validityDate, weight, stock.
 This class extends to the following classes: Vegetable, AnimalProd, Sales.
 

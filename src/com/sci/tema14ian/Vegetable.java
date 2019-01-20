@@ -1,4 +1,4 @@
-/*
+/*14ianuarie-OOP
 Class Vegetable is a subclass of Product. It inherits from class Product the following variables: id, price,
 weight, ValidityDate, stock.
 It has two specific variables: name and list of vitamins (vitamins).

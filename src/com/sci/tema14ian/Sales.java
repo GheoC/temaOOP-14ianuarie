@@ -1,4 +1,4 @@
-/*
+/*14ianuarie-OOP
 Subclass Sales inherits from class Product the variables id and price.
 It also has two variables: nameOfProduct and date.
 
