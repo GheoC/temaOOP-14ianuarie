@@ -1,4 +1,4 @@
-/*
+/*TemaOOP-14ianuarie: Local Store Simulation.
 Manages a store that has animal products and vegetables.
 The basic functions are: adding new stock to a product, selling products from the store, displays sales on a specific
 day specified by the user.
@@ -101,7 +101,7 @@ public class Store {
         char choiceMenuVar; //am ales variabila de tip char pentru a nu da eroare la apasare aiurea pe tastatura;
         List<AnimalProd> animalProds = new ArrayList<AnimalProd>();
         List<Vegetable> vegetables = new ArrayList<Vegetable>();
-        List<Sales> salesList = new ArrayList<Sales>();
+        List<Sale> saleList = new ArrayList<Sale>();
 
 
         do {
@@ -237,7 +237,7 @@ public class Store {
                         for (AnimalProd animalProd1 : animalProds) {
                             if (animalProd1.getId() == aId) {
 
-                                salesList.add(new Sales(aId, animalProd1.getPrice(), ft.format(dNow), stockSold,
+                                saleList.add(new Sale(aId, animalProd1.getPrice(), ft.format(dNow), stockSold,
                                         animalProd1.getNameOfAnimalProd()));
                             }
                         }
@@ -254,7 +254,7 @@ public class Store {
                         for (Vegetable vegetable1 : vegetables) {
                             if (vegetable1.getId() == aId) {
 
-                                salesList.add(new Sales(aId, vegetable1.getPrice(), ft.format(dNow), stockSold,
+                                saleList.add(new Sale(aId, vegetable1.getPrice(), ft.format(dNow), stockSold,
                                         vegetable1.getNameVegetable()));
                             }
                         }
@@ -268,15 +268,15 @@ public class Store {
                     break;
 
                 case '3':
-                    //Prints out a sales report. User provides the date of the report.
+                    //Prints out a sale report. User provides the date of the report.
 
-                    System.out.println("Sales report: ");
-                    System.out.print("Please insert the date for which you want the sales report; Please use the " +
+                    System.out.println("Sale report: ");
+                    System.out.print("Please insert the date for which you want the sale report; Please use the " +
                             "following pattern: 'yyyy.MM.dd' : ");
                     String aDate = input.next();
 
-                    Sales sales = new Sales();
-                    sales.displaySales(salesList, aDate);
+                    Sale sale = new Sale();
+                    sale.displaySales(saleList, aDate);
                     break;
 
                 case '4':

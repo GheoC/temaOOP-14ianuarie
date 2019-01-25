@@ -1,9 +1,9 @@
-/*
+/*14ianuarie-OOP
 Product is the superclass which has the following variables: id, price, validityDate, weight, stock.
-This class extends to the following classes: Vegetable, AnimalProd, Sales.
+This class extends to the following classes: Vegetable, AnimalProd, Sale.
 
 main constructor is Product(id, price, weight, validityDate, stock)
-constructor Product(id,price) is used by the subclass Sales.
+constructor Product(id,price) is used by the subclass Sale.
 
 method addProd(newStock): adds up the stock inserted by the user to the existing stock.
 
